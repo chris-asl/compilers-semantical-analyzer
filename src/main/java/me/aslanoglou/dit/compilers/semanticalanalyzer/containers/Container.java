@@ -1,5 +1,8 @@
 package me.aslanoglou.dit.compilers.semanticalanalyzer.containers;
 
+/**
+ * Generic container (aka wrapper) class for Classes, Functions, Variables.
+ */
 public class Container {
     String name;
     String type;

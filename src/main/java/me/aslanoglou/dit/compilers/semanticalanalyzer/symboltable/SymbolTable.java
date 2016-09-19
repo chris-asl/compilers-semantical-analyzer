@@ -5,6 +5,9 @@ import me.aslanoglou.dit.compilers.semanticalanalyzer.containers.VariableContain
 
 import java.util.*;
 
+/**
+ * Captures data of the source file, such as subtyping relations, classesInfo while providing lookup facility.
+ */
 public class SymbolTable {
     private Set<String> verifiedClassNames;
     private Map<String, List<String>> superClassRelation;

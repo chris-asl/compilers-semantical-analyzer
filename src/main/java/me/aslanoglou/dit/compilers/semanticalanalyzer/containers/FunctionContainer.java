@@ -7,6 +7,9 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Holds information for functions.
+ */
 public class FunctionContainer extends Container{
     // ParamName -> ParamType
     private Map<String, VariableContainer> params;

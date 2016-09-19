@@ -1,5 +1,8 @@
 package me.aslanoglou.dit.compilers.semanticalanalyzer.containers;
 
+/**
+ * Holds information for variables.
+ */
 public class VariableContainer extends Container {
 
     public VariableContainer(String name, String type, String className, int index) {

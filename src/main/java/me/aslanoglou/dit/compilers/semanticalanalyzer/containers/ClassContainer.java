@@ -4,7 +4,9 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-
+/**
+ * Holds information for classes.
+ */
 public class ClassContainer extends Container {
     // fieldName -> fieldType
     private Map<String, VariableContainer> fields;
