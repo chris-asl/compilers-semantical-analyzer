@@ -148,10 +148,17 @@ public class TypeCheckingVisitor extends GJDepthFirst<String, String> {
     public String visit(AssignmentStatement n, String argu) {
         String idType = n.f0.accept(this, argu);
         String exprType = n.f2.accept(this, argu);
-        // If the identifier refers to a Class check subtyping due to inheritance
+        // If the identifier refers to a Class, check subtyping due to inheritance
         if (symbolTable.getClass(idType) != null && !idType.equals(exprType)) {
             List<String> supers = symbolTable.getSuperClasses(exprType);
-            if (supers != null && !supers.contains(idType)){
+            if (supers != null) {
+                if (!supers.contains(idType)) {
+                    String error = "Incompatible types. Required '" + idType + "' and found: '" + exprType + "'";
+                    throw new RuntimeException(error);
+                }
+            }
+            else {
+                // Identifier isn't a subtype and types mismatch.
                 String error = "Incompatible types. Required '" + idType + "' and found: '" + exprType + "'";
                 throw new RuntimeException(error);
             }
