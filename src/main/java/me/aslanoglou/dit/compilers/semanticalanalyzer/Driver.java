@@ -13,18 +13,18 @@ import java.io.*;
  *
  * Some info on the Visitors:
  *      1.  The 1st one is collecting classNames and the superClassRelations
- *      2.  This one, is collecting the info about each class, its fields and methods
- *              There are some Containers here, that represent a Class, a Function (method) and a Variable
- *              This were used for the implementation and representation of the equivalent structures of the given program
- *      3.  This one does the type-checking, supported by a symbolTable
- *              The symbol table contains all the info gathered by the two previous visitors, and the actual symbol
- *              table is a VariableName to VariableContainer mapping.
+ *      2.  The 2nd one collects info about each class (its fields and methods).
+ *              There are some Containers here, that represent a Class, a Function (method) and a Variable. These
+ *              were used for the implementation and representation of the equivalent structures of the given program.
+ *      3.  The 3rd and final one does type-checking, supported by a symbolTable
+ *              The symbol table contains all information gathered by the two previous visitors, and the actual symbol
+ *              table which is a VariableName to VariableContainer mapping.
  *              Since all variables are to be defined at the start of a method, this simplifies things, and generally
- *              two Scopes can be defined (there could be only one, but two was more modular)
- *              The two Scopes, are: [a] Class Scope (all its fields) and [b] Function Scope (all its formal parameters
- *              and its local vars).
+ *              two Scopes can be defined (there could be only one, but two was more modular).
+ *              The two Scopes, are: [a] Class Scope (all its fields) and [b] Function Scope (all its formal
+ *              parameters and its local vars).
  *
- *  For error reporting, a RuntimeException is thrown
+ *  For error reporting, a RuntimeException is thrown.
  */
 class Driver {
     public static void main (String [] args){

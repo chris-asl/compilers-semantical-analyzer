@@ -27,8 +27,7 @@
                         </manifest>
                         <manifestEntries>
                             <Built-By>Chris Aslanoglou</Built-By>
-                            <url>http://aslanoglou.me</url>
-                            <!-- TODO update URL after uploading to GitHub -->
+                            <url>https://github.com/chris-asl/compilers-semantical-analyzer</url>
                         </manifestEntries>
                     </archive>
                 </configuration>
