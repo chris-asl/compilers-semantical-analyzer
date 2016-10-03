@@ -1,6 +1,4 @@
     **********************************************************************
-    ** National and Kapodistrian University of Athens                   **  
-    ** Department of Informatics and Telecommunications                 **
     ** Compilers - Spring Semester 2014                                 **
     ** Semester Project: MiniJava (subset of Java) compiler             **
     ** Part 1 out of 4: Semantic Check                                  **
